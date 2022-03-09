@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sugarlevel">
+
+    <TextView
+        android:id="@+id/tv_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step2_select_sugar_level"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <RadioGroup
+        android:id="@+id/rg_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sugar"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/rb_s0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar Level : 0%">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_s25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar Level : 25%">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_s50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar Level : 50%">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_s75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar Level : 75%">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_s100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar Level : 100%">
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_sugar_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_sugar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:gravity="center"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

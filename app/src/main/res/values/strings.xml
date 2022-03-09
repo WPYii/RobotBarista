@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RobotBarista</string>
+    <string name="welcome_to_robotbarista">Welcome to RobotBarista~</string>
+    <string name="click_to_begin">Click to begin</string>
+    <string name="next">next</string>
+    <string name="previous">Previous</string>
+    <string name="select_your_coffee">Select your coffee</string>
+    <string name="step1_select_your_coffee">Step1.Select your coffee</string>
+    <string name="back">Back</string>
+    <string name="step_3_milk">Step 3.Milk</string>
+    <string name="submit">Submit</string>
+    <string name="step2_select_sugar_level">Step2.Select sugar level</string>
+    <string name="thank_you">Thank You</string>
+    <string name="brewed_coffees">Brewed Coffees</string>
+    <string name="espresso">Espresso</string>
+    <string name="lattes">Lattes</string>
+    <string name="mochas">Mochas</string>
+    <string name="restart">restart</string>
+</resources>
